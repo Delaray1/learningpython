@@ -41,4 +41,4 @@ person = {"name": "Alice", "age": 25}
 #boolean databases
 #boolean examples
 is_active = True
-has_permission = Fa
+has_permission = False
