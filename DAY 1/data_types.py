@@ -1,29 +1,35 @@
 #types of databases
 
-#numerical databases
+#numerical databases [represents numbers]
 
-#integers example
+#integers [stores whole numbers]
+example
 age = 36
 temperature = 78
 
-#Float example
+#Float [represents real numbers with a decimal point]
+example
 price = 19.99
 pi = 3.142
 
-#Complex examples
+#Complex [stores numbers with a real part and an imaginary part]
+examples
 equation = 3 + 5j
-quadrant = 6 + 9
+quadrant = 6 + 9q
 
-#Sequence  databases
+#Sequence  databases [stores collection of items in a specific order]
 
-#Strings example
+#Strings[stores a sequence of characters,representing text data]
+example
 greetings = "hello world"
 name = "raymond"
 
-#list examples
+#list[stores an ordered collection of items,which can be of any data type]
+examples
 fruits=["apple","banana","cherry"]
 
-#tuple examples
+#tuple[stores an ordered collection of items but with fixed content ]
+examples
 coordinates = (10,20)
 
 #Set databases
