@@ -1,1 +1,1 @@
-python basics
+datatypes in python basics
