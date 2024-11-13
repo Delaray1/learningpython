@@ -12,7 +12,7 @@ pi = 3.142
 
 #Complex examples
 equation = 3 + 5j
-quadrant = 6 + 9q
+quadrant = 6 + 9
 
 #Sequence  databases
 
