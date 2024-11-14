@@ -13,5 +13,5 @@ elif 40 <= attained_score < 50:
 elif 0 <= attained_score < 40:
     grade = "F"
 else:
-    grade = "Invalid score"
+    grade = "Invalid score"  
 print(f"You scored a {grade}")
