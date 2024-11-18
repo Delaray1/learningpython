@@ -58,119 +58,93 @@ for i in range(10):
 ## FOR LOOP
 The for loop
 is used for iterating over a sequence (list, tuple, string) or other iterable objects.
-## SYNTAX
-for variable in sequence:
-    # code to be executed
-    ## EXAMPLE
-    ts = ["apple", "banana", "cherry"]
-    for fruit in fruits:
+## Examples
+1. Looping Through a List
+python
+Copy code
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
     print(fruit)
-    ## OUTPUT
-    apple
-    banana
-    cherry
-    ## EXAMPLE
-    for i in range(10):
+2. Using range()
+Example: Loop from 0 to 9
+python
+Copy code
+for i in range(10):
     print(i)
-    ## OUTPUT
-    0
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    ##
-    ## EXAMPLE
-    for i in range(1, 10, 2):
+Example: Loop with a Step
+python
+Copy code
+for i in range(0, 20, 5):
     print(i)
-    ## OUTPUT
-    1
-    3
-    5
-    7
-    9
-    ## EXAMPLE
-    for i
-    in range(10, 0, -1):
+Example: Loop in Reverse
+python
+Copy code
+for i in range(10, 0, -1):
     print(i)
-    ## OUTPUT
-    10
-    9
-    8
-    7
-    6
-    5
-    4
-    3
-    2
-    1
-    ##
-    ## EXAMPLE
-    for i in range(1, 10):
+3. Looping Through a String
+python
+Copy code
+word = "Python"
+for letter in word:
+    print(letter)
+4. Looping Through a Dictionary
+python
+Copy code
+grades = {"Alice": "A", "Bob": "B", "Charlie": "C"}
+for student, grade in grades.items():
+    print(f"{student} scored {grade}")
+5. Nested for Loops
+python
+Copy code
+for i in range(3):
+    for j in range(2):
+        print(f"i = {i}, j = {j}")
+6. for Loop with else
+The else block in a for loop runs after the loop completes, unless the loop is terminated by a break.
+
+python
+Copy code
+for i in range(5):
+    print(i)
+else:
+    print("Loop completed!")
+7. Breaking Out of a Loop
+python
+Copy code
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+8. Skipping an Iteration with continue
+python
+Copy code
+for i in range(10):
     if i % 2 == 0:
+        continue
     print(i)
-    ## OUTPUT
-    2
-    4
-    6
-    8
-    ##
-    ## EXAMPLE
-    for i in range(1, 10):
-    if i % 2 != 0:
-    print(i)
-    ## OUTPUT
-    1
-    3
-    5
-    7
-    9
-    ##
-    ## EXAMPLE
-    for i in range(1, 10):
-    if
-    i % 2 == 0:
-    print(i)
+9. Using pass in a Loop
+The pass statement is a placeholder that does nothing.
+
+python
+Copy code
+for i in range(5):
+    if i == 3:
+        pass
     else:
-    print("odd")
-    ## OUTPUT
-    2
-    odd
-    4
-    odd
-    6
-    odd
-    5
-    odd
-    8
-    odd
-    10
-    odd
-    ##
-    ## EXAMPLE
-    for i in range(1, 10):
-    if i % 2 == 0:
-    print(i)
-    else:
-    print("odd")
-    ## OUTPUT
-    2
-    odd
-    4
-    odd
-    6
-    odd
-    5
-    odd
-    8
-    odd
-    10
-    odd
-    ##
+        print(i)
+10. Looping Through a List with enumerate()
+python
+Copy code
+fruits = ["apple", "banana", "cherry"]
+for index, fruit in enumerate(fruits):
+    print(f"Index {index}: {fruit}")
+11. Looping Through Multiple Sequences with zip()
+python
+Copy code
+names = ["Alice", "Bob", "Charlie"]
+scores = [85, 90, 78]
+for name, score in zip(names, scores):
+    print(f"{name} scored {score}")
 
 ## lists
 A list is a collection which is ordered and changeable. Allows duplicate members.
