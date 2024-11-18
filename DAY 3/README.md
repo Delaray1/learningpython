@@ -10,47 +10,43 @@ b: Divisor (the number dividing).
 Returns the remainder of a ÷ b.
 ## Use Cases
 1. Determine if a Number is Even or Odd
-python
-Copy code
+# EXAMPLE
 number = int(input("Enter a number: "))
 if number % 2 == 0:
     print("Even")
 else:
     print("Odd")
 2. Cycle Through Values
-python
-Copy code
+# EXAMPLE
 for i in range(10):
-    print(i % 3)  # Outputs: 0, 1, 2, 0, 1, 2...
+    print(i % 3) 
+# Outputs: 0, 1, 2, 0, 1, 2...
 3. Check Divisibility
-python
-Copy code
+# EXAMPLE
 if 15 % 5 == 0:
     print("15 is divisible by 5")
 else:
     print("15 is not divisible by 5")
 4. Wrap Around an Index (e.g., Rotating Through a List)
-python
-Copy code
+# EXAMPLE
 items = ["A", "B", "C"]
 for i in range(10):
-    print(items[i % len(items)])  # Outputs: A, B, C, A, B, C...
+    print(items[i % len(items)])
+# Outputs: A, B, C, A, B, C...
 5. Get the Last Digit of a Number
-python
-Copy code
+# EXAMPLE
 number = 12345
-print(number % 10)  # Outputs: 5
+print(number % 10)
+# Outputs: 5
 6. Find if a Year is a Leap Year
-python
-Copy code
+# EXAMPLE
 year = int(input("Enter a year: "))
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print("Leap year")
 else:
     print("Not a leap year")
 7. Partition Numbers
-python
-Copy code
+# EXAMPLE
 for i in range(10):
     if i % 3 == 0:
         print(f"{i} is divisible by 3")
@@ -60,87 +56,72 @@ The for loop
 is used for iterating over a sequence (list, tuple, string) or other iterable objects.
 ## Examples
 1. Looping Through a List
-python
-Copy code
+# EXAMPLE
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit)
 2. Using range()
 Example: Loop from 0 to 9
-python
-Copy code
+# EXAMPLE
 for i in range(10):
     print(i)
-Example: Loop with a Step
-python
-Copy code
+## Example: Loop with a Step
+# EXAMPLE
 for i in range(0, 20, 5):
     print(i)
-Example: Loop in Reverse
-python
-Copy code
+## Example: Loop in Reverse
+# EXAMPLE
 for i in range(10, 0, -1):
     print(i)
 3. Looping Through a String
-python
-Copy code
+# EXAMPLE
 word = "Python"
 for letter in word:
     print(letter)
 4. Looping Through a Dictionary
-python
-Copy code
+# EXAMPLE
 grades = {"Alice": "A", "Bob": "B", "Charlie": "C"}
 for student, grade in grades.items():
     print(f"{student} scored {grade}")
 5. Nested for Loops
-python
-Copy code
+# EXAMPLE
 for i in range(3):
     for j in range(2):
         print(f"i = {i}, j = {j}")
 6. for Loop with else
 The else block in a for loop runs after the loop completes, unless the loop is terminated by a break.
-
-python
-Copy code
+# EXAMPLE
 for i in range(5):
     print(i)
 else:
     print("Loop completed!")
 7. Breaking Out of a Loop
-python
-Copy code
+# EXAMPLE
 for i in range(10):
     if i == 5:
         break
     print(i)
 8. Skipping an Iteration with continue
-python
-Copy code
+# EXAMPLE
 for i in range(10):
     if i % 2 == 0:
         continue
     print(i)
 9. Using pass in a Loop
 The pass statement is a placeholder that does nothing.
-
-python
-Copy code
+# EXAMPLE
 for i in range(5):
     if i == 3:
         pass
     else:
         print(i)
 10. Looping Through a List with enumerate()
-python
-Copy code
+# EXAMPLE
 fruits = ["apple", "banana", "cherry"]
 for index, fruit in enumerate(fruits):
     print(f"Index {index}: {fruit}")
 11. Looping Through Multiple Sequences with zip()
-python
-Copy code
+# EXAMPLE
 names = ["Alice", "Bob", "Charlie"]
 scores = [85, 90, 78]
 for name, score in zip(names, scores):
